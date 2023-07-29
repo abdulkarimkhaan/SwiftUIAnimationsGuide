@@ -21,7 +21,7 @@ Each animation example is accompanied by clear, concise code explanations, empow
 
 Get inspired and level up your SwiftUI skills with this Animation Showcase! Use these animations as building blocks to design unique and engaging user experiences for your own projects.
 
-🚀 Check out the live demo: https://www.example.com/swiftui-animations-demo
+🚀 Check out the live demo by running it's preview.
 
 ⭐️ Star this repository to show your support and stay updated with the latest animations and additions.
 
