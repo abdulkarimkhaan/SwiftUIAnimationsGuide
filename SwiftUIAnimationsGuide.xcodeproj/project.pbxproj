@@ -15,6 +15,7 @@
 		84D97E992A757682005B876C /* SwiftUIAnimationsGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D97E982A757682005B876C /* SwiftUIAnimationsGuideUITests.swift */; };
 		84D97E9B2A757682005B876C /* SwiftUIAnimationsGuideUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D97E9A2A757682005B876C /* SwiftUIAnimationsGuideUITestsLaunchTests.swift */; };
 		84D97EA82A75777D005B876C /* RippleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D97EA72A75777D005B876C /* RippleEffect.swift */; };
+		84D97EAA2A758DBD005B876C /* Clocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D97EA92A758DBD005B876C /* Clocks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		84D97E982A757682005B876C /* SwiftUIAnimationsGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationsGuideUITests.swift; sourceTree = "<group>"; };
 		84D97E9A2A757682005B876C /* SwiftUIAnimationsGuideUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationsGuideUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		84D97EA72A75777D005B876C /* RippleEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RippleEffect.swift; sourceTree = "<group>"; };
+		84D97EA92A758DBD005B876C /* Clocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clocks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				84D97E7D2A75767E005B876C /* SwiftUIAnimationsGuideApp.swift */,
 				84D97E7F2A75767E005B876C /* CircleLoader.swift */,
 				84D97EA72A75777D005B876C /* RippleEffect.swift */,
+				84D97EA92A758DBD005B876C /* Clocks.swift */,
 				84D97E812A757682005B876C /* Assets.xcassets */,
 				84D97E832A757682005B876C /* Preview Content */,
 			);
@@ -263,6 +266,7 @@
 				84D97E802A75767E005B876C /* CircleLoader.swift in Sources */,
 				84D97E7E2A75767E005B876C /* SwiftUIAnimationsGuideApp.swift in Sources */,
 				84D97EA82A75777D005B876C /* RippleEffect.swift in Sources */,
+				84D97EAA2A758DBD005B876C /* Clocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
