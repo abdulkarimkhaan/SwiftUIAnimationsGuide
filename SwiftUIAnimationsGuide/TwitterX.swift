@@ -88,12 +88,12 @@ struct TwitterX: View {
                 
                 ZStack {
                     XSecondTopLeftHand()
-                        .stroke(style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round, miterLimit: 8))
+                        .stroke(style: StrokeStyle(lineWidth: 14, lineCap: .round, lineJoin: .round, miterLimit: 8))
                         .foregroundColor(Color.white)
                         .rotationEffect(.init(degrees: Double(-45)))
                         .opacity(animateSecondLine ? Double(opacity) : 0)
                     XSecondBottomRightHand()
-                        .stroke(style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round, miterLimit: 8))
+                        .stroke(style: StrokeStyle(lineWidth: 14, lineCap: .round, lineJoin: .round, miterLimit: 8))
                         .foregroundColor(Color.white)
                         .rotationEffect(.init(degrees: Double(-45)))
                         .opacity(animateSecondLine ? Double(opacity) : 0)
@@ -102,19 +102,19 @@ struct TwitterX: View {
                 
                
                 XTopRightHand()
-                    .stroke(style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round, miterLimit: 8))
+                    .stroke(style: StrokeStyle(lineWidth: 14, lineCap: .round, lineJoin: .round, miterLimit: 8))
                     .foregroundColor(Color.white)
                     .rotationEffect(.init(degrees: Double(topRight)))
                 XTopLeftHand()
-                    .stroke(style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round, miterLimit: 8))
+                    .stroke(style: StrokeStyle(lineWidth: 14, lineCap: .round, lineJoin: .round, miterLimit: 8))
                     .foregroundColor(Color.white)
                     .rotationEffect(.init(degrees: Double(topLeft)))
                 XBottomRightHand()
-                    .stroke(style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round, miterLimit: 8))
+                    .stroke(style: StrokeStyle(lineWidth: 14, lineCap: .round, lineJoin: .round, miterLimit: 8))
                     .foregroundColor(Color.white)
                     .rotationEffect(.init(degrees: Double(bottomRight)))
                 XBottomLeftHand()
-                    .stroke(style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round, miterLimit: 8))
+                    .stroke(style: StrokeStyle(lineWidth: 14, lineCap: .round, lineJoin: .round, miterLimit: 8))
                     .foregroundColor(Color.white)
                     .rotationEffect(.init(degrees: Double(bottomLeft)))
             }
@@ -141,8 +141,8 @@ struct TwitterX: View {
     }
 }
 
-struct TwitterX_Previews: PreviewProvider {
-    static var previews: some View {
-        TwitterX()
-    }
-}
+//struct TwitterX_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TwitterX()
+//    }
+//}
