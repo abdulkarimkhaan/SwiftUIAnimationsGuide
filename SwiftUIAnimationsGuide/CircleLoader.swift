@@ -45,8 +45,8 @@ struct CircleLoader: View {
     }
 }
 
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        CircleLoader()
-//    }
-//}
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        CircleLoader()
+    }
+}

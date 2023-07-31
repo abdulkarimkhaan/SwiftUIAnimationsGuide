@@ -34,13 +34,13 @@ struct SandClockLoader: View {
     }
 }
 
-struct SandClockLoader_Previews: PreviewProvider {
-    static var previews: some View {
-        SandClockLoader()
-            .padding()
-            .frame(width: 100, height: 300)
-    }
-}
+//struct SandClockLoader_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SandClockLoader()
+//            .padding()
+//            .frame(width: 100, height: 300)
+//    }
+//}
 
 struct Triangle: Shape {
     func path(in rect: CGRect) -> Path {
