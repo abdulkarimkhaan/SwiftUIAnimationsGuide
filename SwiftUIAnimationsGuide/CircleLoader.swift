@@ -16,7 +16,7 @@ struct CircleLoader: View {
     @State var widthRipple2 = 260.0
     @State var heightRipple2 = 260.0
     
-    @State var speedOfLoader = 0.05
+    @State var speedOfLoader = 0.02
 
     var body: some View {
         ZStack {
@@ -45,7 +45,7 @@ struct CircleLoader: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct CircleLoader_Previews: PreviewProvider {
     static var previews: some View {
         CircleLoader()
     }
