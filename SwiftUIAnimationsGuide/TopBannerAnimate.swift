@@ -67,9 +67,9 @@ struct TopBannerAnimate: View {
     }
 }
 
-struct TopBannerAnimate_Previews: PreviewProvider {
-    static var previews: some View {
-        TopBannerAnimate()
-            .ignoresSafeArea()
-    }
-}
+//struct TopBannerAnimate_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TopBannerAnimate()
+//            .ignoresSafeArea()
+//    }
+//}

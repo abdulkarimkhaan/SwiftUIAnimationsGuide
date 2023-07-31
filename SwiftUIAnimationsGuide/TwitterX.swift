@@ -120,14 +120,14 @@ struct TwitterX: View {
             }
         }
         .onAppear {
-            Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { timer in
+            Timer.scheduledTimer(withTimeInterval: 0.03, repeats: true) { timer in
                 if topLeft != -45 {
                     topLeft -= 5
                 } else {
                     animateSecondLine = true
                 }
             }
-            Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { timer in
+            Timer.scheduledTimer(withTimeInterval: 0.03, repeats: true) { timer in
                 if bottomRight != -45 {
                     bottomRight -= 5
                 }
@@ -141,8 +141,8 @@ struct TwitterX: View {
     }
 }
 
-//struct TwitterX_Previews: PreviewProvider {
-//    static var previews: some View {
-//        TwitterX()
-//    }
-//}
+struct TwitterX_Previews: PreviewProvider {
+    static var previews: some View {
+        TwitterX()
+    }
+}
