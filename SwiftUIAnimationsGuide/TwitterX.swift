@@ -141,8 +141,8 @@ struct TwitterX: View {
     }
 }
 
-struct TwitterX_Previews: PreviewProvider {
-    static var previews: some View {
-        TwitterX()
-    }
-}
+//struct TwitterX_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TwitterX()
+//    }
+//}
