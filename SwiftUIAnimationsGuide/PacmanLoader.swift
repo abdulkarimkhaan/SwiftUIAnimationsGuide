@@ -71,8 +71,8 @@ struct PacmanLoader: View {
     }
 }
 
-struct PacmanLoader_Previews: PreviewProvider {
-    static var previews: some View {
-        PacmanLoader()
-    }
-}
+//struct PacmanLoader_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PacmanLoader()
+//    }
+//}
