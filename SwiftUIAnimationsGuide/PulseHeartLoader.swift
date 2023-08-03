@@ -32,10 +32,10 @@ struct PulseHeartLoader: View {
     }
 }
 
-struct PulseHeartLoader_Previews: PreviewProvider {
-    static var previews: some View {
-        PulseHeart()
-    }
-}
+//struct PulseHeartLoader_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PulseHeart()
+//    }
+//}
 
 

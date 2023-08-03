@@ -54,8 +54,8 @@ struct EyesLoader: View {
     }
 }
 
-struct EyesLoader_Previews: PreviewProvider {
-    static var previews: some View {
-        EyesLoader()
-    }
-}
+//struct EyesLoader_Previews: PreviewProvider {
+//    static var previews: some View {
+//        EyesLoader()
+//    }
+//}
