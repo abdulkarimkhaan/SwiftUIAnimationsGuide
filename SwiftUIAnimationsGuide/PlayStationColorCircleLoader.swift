@@ -1,5 +1,5 @@
 //
-//  JarFilledWithLiquid.swift
+//  PlayStationLoader.swift
 //  SwiftUIAnimationsGuide
 //
 //  Created by Abdul Karim Khan on 03/08/2023.
@@ -7,50 +7,44 @@
 
 import SwiftUI
 
-struct PlayStationLoader: View {
-    @State private var isAnimating = false
-    
+struct DayNightView: View {
+    @State private var isDaytime = false
+
     var body: some View {
         ZStack {
-            Color.black // Background color
-            
-            Group {
-                Circle()
-                    .fill(Color.blue)
-                    .frame(width: 30, height: 30)
-                    .offset(y: isAnimating ? -50 : 0)
-                
-                Circle()
-                    .fill(Color.red)
-                    .frame(width: 30, height: 30)
-                    .offset(x: isAnimating ? 43 : 0, y: isAnimating ? 25 : 0)
-                
-                Circle()
-                    .fill(Color.green)
-                    .frame(width: 30, height: 30)
-                    .offset(x: isAnimating ? -43 : 0, y: isAnimating ? 25 : 0)
-                
-                Circle()
-                    .fill(Color.yellow)
-                    .frame(width: 30, height: 30)
-                    .offset(y: isAnimating ? 50 : 0)
-            }
-            .animation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true))
+            // Background color changes based on daytime
+            LinearGradient(gradient: Gradient(colors: [isDaytime ? .blue : .black, isDaytime ? .white : .gray]), startPoint: .top, endPoint: .bottom)
+                .edgesIgnoringSafeArea(.all)
+
+
+            // Sun and Moon
+            Circle()
+                .fill(isDaytime ? Color.yellow : Color.white)
+                .frame(width: 60, height: 60)
+                .offset(y: 400)
+                .rotationEffect(isDaytime ? Angle.degrees(180) : Angle.degrees(-180))
+                .animation(Animation.linear(duration: 2).repeatForever(autoreverses: true))
         }
         .onAppear {
-            isAnimating = true
+            // Start the animation when the view appears
+            Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { timer in
+                isDaytime.toggle()
+            }
         }
     }
 }
 
-struct PlayStationColorCircleLoader: View {
+struct ContentView: View {
     var body: some View {
-        PlayStationLoader()
+        VStack {
+            DayNightView()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+        }
     }
 }
 
-struct PlayStationColorCircleLoader_Previews: PreviewProvider {
+struct PulseHeartLoader_Previews: PreviewProvider {
     static var previews: some View {
-        PlayStationColorCircleLoader()
+        ContentView()
     }
 }
