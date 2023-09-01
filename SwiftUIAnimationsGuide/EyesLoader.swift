@@ -14,13 +14,11 @@ struct Eyes: View {
         ZStack {
             Color.black.edgesIgnoringSafeArea(.all)
             
-            
-            
             HStack (spacing: 30){
                 Capsule()
                     .frame(width: 100, height: isAnimating ? 0 : 50)
                     .foregroundColor(.white)
-                    .animation(Animation.easeInOut(duration: 1.2).repeatForever(autoreverses: true))
+                    .animation(.easeInOut(duration: 1.2).repeatForever(autoreverses: true), value: isAnimating)
                     .overlay(
                         Circle()
                             .frame(width: 20, height: 20)
@@ -29,7 +27,7 @@ struct Eyes: View {
                 Capsule()
                     .frame(width: 100, height: isAnimating ? 0 : 50)
                     .foregroundColor(.white)
-                    .animation(Animation.easeInOut(duration: 1.2).repeatForever(autoreverses: true))
+                    .animation(.easeInOut(duration: 1.2).repeatForever(autoreverses: true), value: isAnimating)
                     .overlay(
                         Circle()
                             .frame(width: 20, height: 20)
@@ -54,8 +52,8 @@ struct EyesLoader: View {
     }
 }
 
-//struct EyesLoader_Previews: PreviewProvider {
-//    static var previews: some View {
-//        EyesLoader()
-//    }
-//}
+struct EyesLoader_Previews: PreviewProvider {
+    static var previews: some View {
+        EyesLoader()
+    }
+}

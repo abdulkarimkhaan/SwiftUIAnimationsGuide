@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct PacMan: View {
-    @State private var loginUser = false
     @State private var isMouthOpen = false
-    @State private var animateBounty = false
-    @State private var eatenBounty = false
-    @State private var timeForNewBounty = 1.0
+    @State private var animateMovement = false
+    @State private var timeToStartMovement = 0.1
+    @State private var speedOfPacman = 0.05
 
     var body: some View {
         GeometryReader { geometry in
@@ -27,27 +26,19 @@ struct PacMan: View {
                     
                     // Closing the mouth with a line
                     path.addLine(to: CGPoint(x: geometry.size.width / 2, y: geometry.size.height / 2))
+                    
                 }
                 .fill(Color.yellow)
-                
-                
-                Circle()
-                    .fill(Color.white)
-                    .frame(width: 30, height: 30)
-                    .animation(.spring(), value: animateBounty)
-                    .offset(x: animateBounty ? 30 : 200, y: 0)
-                    .opacity(eatenBounty ? 0 : 1)
+                .animation(.spring().speed(speedOfPacman), value: animateMovement)
+//                .offset(x: animateMovement ? 250 : -250, y: 0)
             }
             .onAppear {
                 Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { timer in
                     isMouthOpen.toggle()
                 }
-                Timer.scheduledTimer(withTimeInterval: timeForNewBounty, repeats: false) { timer in
-                    animateBounty.toggle()
-                }
-                Timer.scheduledTimer(withTimeInterval: timeForNewBounty + 0.3, repeats: false) { timer in
-                    eatenBounty.toggle()
-                }
+//                Timer.scheduledTimer(withTimeInterval: timeToStartMovement, repeats: false) { timer in
+//                    animateMovement.toggle()
+//                }
             }
         }
         
@@ -71,8 +62,8 @@ struct PacmanLoader: View {
     }
 }
 
-//struct PacmanLoader_Previews: PreviewProvider {
-//    static var previews: some View {
-//        PacmanLoader()
-//    }
-//}
+struct PacmanLoader_Previews: PreviewProvider {
+    static var previews: some View {
+        PacmanLoader()
+    }
+}

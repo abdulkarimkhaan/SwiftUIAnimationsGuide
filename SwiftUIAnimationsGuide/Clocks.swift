@@ -40,9 +40,9 @@ struct Clocks: View {
     @State var angleRotationMinutes = -40
     @State var angleRotationHours = 50
     
-    @State var seconds = 1.0
-    @State var minutes = 60.0
-    @State var hours = 360.0
+    @State var seconds = 0.1
+    @State var minutes = 6.0
+    @State var hours = 36.0
 
     var body: some View {
         ZStack {
@@ -81,8 +81,8 @@ struct Clocks: View {
     }
 }
 
-//struct Clocks_Previews: PreviewProvider {
-//    static var previews: some View {
-//        Clocks()
-//    }
-//}
+struct Clocks_Previews: PreviewProvider {
+    static var previews: some View {
+        Clocks()
+    }
+}

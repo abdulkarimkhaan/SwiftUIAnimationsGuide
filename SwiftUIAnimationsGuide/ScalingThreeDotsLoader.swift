@@ -41,9 +41,9 @@ struct ScalingThreeDots: View {
         .padding()
     }
 }
-//
-//struct ScalingThreeDots_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ScalingThreeDots()
-//    }
-//}
+
+struct ScalingThreeDots_Previews: PreviewProvider {
+    static var previews: some View {
+        ScalingThreeDots()
+    }
+}

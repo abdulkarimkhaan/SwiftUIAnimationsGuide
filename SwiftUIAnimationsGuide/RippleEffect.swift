@@ -91,8 +91,8 @@ struct RippleEffect: View {
     }
 }
 
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        RippleEffect()
-//    }
-//}
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        RippleEffect()
+    }
+}
