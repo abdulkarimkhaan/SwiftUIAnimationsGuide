@@ -10,6 +10,8 @@ import SwiftUI
 struct LoadingWithOAnimation: View {
     
     @State var updateRotationEffect = 0
+    @State var updateProgressPersent = 0
+    let timerProgressPersent = Timer.publish(every: 0.2, on: .main, in: .common).autoconnect()
     
     var body: some View {
         ZStack {
@@ -26,12 +28,17 @@ struct LoadingWithOAnimation: View {
                     .frame(width: 26, height: 26)
                     .overlay(
                         Circle()
-                            .trim(from: 0, to: 0.4)
+                            .trim(from: 0, to: CGFloat(updateProgressPersent) / 100)
                             .stroke(style: StrokeStyle(lineWidth: 8))
                             .fill(.white)
                             .frame(width: 26, height: 26)
                             .rotationEffect(.init(degrees: Double(updateRotationEffect)))
                     )
+                    .onReceive(timerProgressPersent) { _ in
+                        if updateProgressPersent  < 100 {
+                            updateProgressPersent += 1
+                        }
+                    }
                
                 Text("ADING")
                     .foregroundColor(.white)
