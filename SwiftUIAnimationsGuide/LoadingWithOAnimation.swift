@@ -9,12 +9,13 @@ import SwiftUI
 
 struct LoadingWithOAnimation: View {
     
-    @State var updateRotationEffect = 0
+    @State var rotationDegree = 0.0
     
     var body: some View {
         ZStack {
-            Color.black.ignoresSafeArea(.all)
-            HStack (spacing: 8) {
+            Color.black.edgesIgnoringSafeArea(.all)
+            
+            HStack {
                 Text("L")
                     .foregroundColor(.white)
                     .font(.system(size: 34))
@@ -22,17 +23,18 @@ struct LoadingWithOAnimation: View {
                 
                 Circle()
                     .stroke(style: StrokeStyle(lineWidth: 8))
-                    .foregroundColor(.white.opacity(0.4))
                     .frame(width: 26, height: 26)
-                    .overlay(
+                    .foregroundColor(.white.opacity(0.4))
+                    .overlay (
                         Circle()
-                            .trim(from: 0, to: 0.4)
+                            .trim(from: 0, to: 0.3)
                             .stroke(style: StrokeStyle(lineWidth: 8))
-                            .fill(.white)
                             .frame(width: 26, height: 26)
-                            .rotationEffect(.init(degrees: Double(updateRotationEffect)))
+                            .foregroundColor(.white)
+                            .rotationEffect(.init(degrees: rotationDegree))
                     )
-               
+                
+                
                 Text("ADING")
                     .foregroundColor(.white)
                     .font(.system(size: 34))
@@ -40,10 +42,11 @@ struct LoadingWithOAnimation: View {
             }
         }
         .onAppear {
-            Timer.scheduledTimer(withTimeInterval: 0.003, repeats: true) { Timer in
-                updateRotationEffect += 1
+            Timer.scheduledTimer(withTimeInterval: 0.001, repeats: true) { Timer in
+                rotationDegree += 1
             }
         }
+        
     }
 }
 

@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUIAnimationsGuideApp: App {
     var body: some Scene {
         WindowGroup {
-            LoadingWithOAnimation()
+            DownloadButton()
         }
     }
 }

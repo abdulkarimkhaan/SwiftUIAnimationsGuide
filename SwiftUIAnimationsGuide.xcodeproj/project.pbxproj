@@ -13,6 +13,7 @@
 		84B26ABD2A782638007A6710 /* PacmanLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B26ABC2A782638007A6710 /* PacmanLoader.swift */; };
 		84B26ABF2A79D7DF007A6710 /* EyesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B26ABE2A79D7DF007A6710 /* EyesLoader.swift */; };
 		84B26AC12A7B554D007A6710 /* PulseHeartLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B26AC02A7B554D007A6710 /* PulseHeartLoader.swift */; };
+		84B9B7942AA6CD7100541398 /* DownloadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B9B7932AA6CD7100541398 /* DownloadButton.swift */; };
 		84CCECB12AA466EA00AC4C21 /* LoadingWithOAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCECB02AA466EA00AC4C21 /* LoadingWithOAnimation.swift */; };
 		84D97E7E2A75767E005B876C /* SwiftUIAnimationsGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D97E7D2A75767E005B876C /* SwiftUIAnimationsGuideApp.swift */; };
 		84D97E802A75767E005B876C /* CircleLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D97E7F2A75767E005B876C /* CircleLoader.swift */; };
@@ -52,6 +53,7 @@
 		84B26ABE2A79D7DF007A6710 /* EyesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyesLoader.swift; sourceTree = "<group>"; };
 		84B26AC02A7B554D007A6710 /* PulseHeartLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseHeartLoader.swift; sourceTree = "<group>"; };
 		84B26B132A8A4FEC007A6710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		84B9B7932AA6CD7100541398 /* DownloadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadButton.swift; sourceTree = "<group>"; };
 		84CCECB02AA466EA00AC4C21 /* LoadingWithOAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingWithOAnimation.swift; sourceTree = "<group>"; };
 		84D97E7A2A75767E005B876C /* SwiftUIAnimationsGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAnimationsGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D97E7D2A75767E005B876C /* SwiftUIAnimationsGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationsGuideApp.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				84B26AC02A7B554D007A6710 /* PulseHeartLoader.swift */,
 				84612D4A2AA10F8F001201E5 /* LoadingBarWithLogo.swift */,
 				84CCECB02AA466EA00AC4C21 /* LoadingWithOAnimation.swift */,
+				84B9B7932AA6CD7100541398 /* DownloadButton.swift */,
 				84D97E812A757682005B876C /* Assets.xcassets */,
 				84D97E832A757682005B876C /* Preview Content */,
 			);
@@ -297,6 +300,7 @@
 				84D97E7E2A75767E005B876C /* SwiftUIAnimationsGuideApp.swift in Sources */,
 				84612D4B2AA10F90001201E5 /* LoadingBarWithLogo.swift in Sources */,
 				84D97EAE2A767EBC005B876C /* SandClockLoader.swift in Sources */,
+				84B9B7942AA6CD7100541398 /* DownloadButton.swift in Sources */,
 				84CCECB12AA466EA00AC4C21 /* LoadingWithOAnimation.swift in Sources */,
 				84D97EA82A75777D005B876C /* RippleEffect.swift in Sources */,
 				84B26AC12A7B554D007A6710 /* PulseHeartLoader.swift in Sources */,
