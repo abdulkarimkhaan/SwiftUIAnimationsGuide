@@ -25,4 +25,19 @@ Get inspired and level up your SwiftUI skills with this Animation Showcase! Use 
 
 ⭐️ Star this repository to show your support and stay updated with the latest animations and additions.
 
+
+# Animation Types
+
+1. Something went wrong
+
+You can add your own custom image, active and inactive that will shake like the one displayed below. (Filename: SomethingWentWrongAnimation)
+
+Preview: 
+https://github.com/abdulkarimkhaan/SwiftUIAnimationsGuide/assets/49764851/216145e4-fdd6-493f-b540-80a4eb8cc7b2
+
+
+
+
+
+
 📝 Licensed under the MIT License.
