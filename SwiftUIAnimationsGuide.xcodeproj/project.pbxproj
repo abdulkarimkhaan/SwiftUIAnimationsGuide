@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		8406C1D42AB667DD00EA57FF /* BarLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406C1D32AB667DD00EA57FF /* BarLoader.swift */; };
 		8414BEEA2AB255A0004CEA67 /* RippleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414BEE92AB255A0004CEA67 /* RippleAnimation.swift */; };
+		8446CB3B2B4B8C9800C8E3F7 /* VectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446CB382B4B8C9800C8E3F7 /* VectorView.swift */; };
+		8446CB3D2B4B8C9800C8E3F7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446CB3A2B4B8C9800C8E3F7 /* MainView.swift */; };
+		8446CB3F2B4B8CAF00C8E3F7 /* BottomContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446CB3E2B4B8CAF00C8E3F7 /* BottomContentView.swift */; };
 		84612D4B2AA10F90001201E5 /* LoadingBarWithLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84612D4A2AA10F8F001201E5 /* LoadingBarWithLogo.swift */; };
 		84B26AB92A7687F5007A6710 /* TopBannerAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B26AB82A7687F5007A6710 /* TopBannerAnimate.swift */; };
 		84B26ABB2A7738B6007A6710 /* ScalingThreeDotsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B26ABA2A7738B6007A6710 /* ScalingThreeDotsLoader.swift */; };
@@ -51,6 +54,9 @@
 /* Begin PBXFileReference section */
 		8406C1D32AB667DD00EA57FF /* BarLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarLoader.swift; sourceTree = "<group>"; };
 		8414BEE92AB255A0004CEA67 /* RippleAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RippleAnimation.swift; sourceTree = "<group>"; };
+		8446CB382B4B8C9800C8E3F7 /* VectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VectorView.swift; sourceTree = "<group>"; };
+		8446CB3A2B4B8C9800C8E3F7 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		8446CB3E2B4B8CAF00C8E3F7 /* BottomContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomContentView.swift; sourceTree = "<group>"; };
 		84612D4A2AA10F8F001201E5 /* LoadingBarWithLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingBarWithLogo.swift; sourceTree = "<group>"; };
 		84B26AB82A7687F5007A6710 /* TopBannerAnimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBannerAnimate.swift; sourceTree = "<group>"; };
 		84B26ABA2A7738B6007A6710 /* ScalingThreeDotsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalingThreeDotsLoader.swift; sourceTree = "<group>"; };
@@ -102,6 +108,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8446CB372B4B8C4700C8E3F7 /* SomethingWentWrong Group */ = {
+			isa = PBXGroup;
+			children = (
+				8446CB3A2B4B8C9800C8E3F7 /* MainView.swift */,
+				8446CB382B4B8C9800C8E3F7 /* VectorView.swift */,
+				8446CB3E2B4B8CAF00C8E3F7 /* BottomContentView.swift */,
+			);
+			path = "SomethingWentWrong Group";
+			sourceTree = "<group>";
+		};
 		84D97E712A75767E005B876C = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +141,7 @@
 		84D97E7C2A75767E005B876C /* SwiftUIAnimationsGuide */ = {
 			isa = PBXGroup;
 			children = (
+				8446CB372B4B8C4700C8E3F7 /* SomethingWentWrong Group */,
 				84B26B132A8A4FEC007A6710 /* Info.plist */,
 				84D97E7D2A75767E005B876C /* SwiftUIAnimationsGuideApp.swift */,
 				84D97E7F2A75767E005B876C /* CircleLoader.swift */,
@@ -307,6 +324,7 @@
 				8414BEEA2AB255A0004CEA67 /* RippleAnimation.swift in Sources */,
 				84D97EAC2A75BC15005B876C /* TwitterX.swift in Sources */,
 				84F0F02F2AB4E31000E69BF8 /* ButtonExpandAnimation.swift in Sources */,
+				8446CB3B2B4B8C9800C8E3F7 /* VectorView.swift in Sources */,
 				8406C1D42AB667DD00EA57FF /* BarLoader.swift in Sources */,
 				84D97E802A75767E005B876C /* CircleLoader.swift in Sources */,
 				84D97E7E2A75767E005B876C /* SwiftUIAnimationsGuideApp.swift in Sources */,
@@ -316,9 +334,11 @@
 				84CCECB12AA466EA00AC4C21 /* LoadingWithOAnimation.swift in Sources */,
 				84D97EA82A75777D005B876C /* RippleEffect.swift in Sources */,
 				84B26AC12A7B554D007A6710 /* PulseHeartLoader.swift in Sources */,
+				8446CB3D2B4B8C9800C8E3F7 /* MainView.swift in Sources */,
 				84B26ABD2A782638007A6710 /* PacmanLoader.swift in Sources */,
 				84B26AB92A7687F5007A6710 /* TopBannerAnimate.swift in Sources */,
 				84B26ABB2A7738B6007A6710 /* ScalingThreeDotsLoader.swift in Sources */,
+				8446CB3F2B4B8CAF00C8E3F7 /* BottomContentView.swift in Sources */,
 				84B26ABF2A79D7DF007A6710 /* EyesLoader.swift in Sources */,
 				84D97EAA2A758DBD005B876C /* Clocks.swift in Sources */,
 			);
