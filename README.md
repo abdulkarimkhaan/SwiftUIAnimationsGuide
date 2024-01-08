@@ -33,8 +33,8 @@ Get inspired and level up your SwiftUI skills with this Animation Showcase! Use 
 You can add your own custom image, active and inactive that will shake like the one displayed below. (Filename: SomethingWentWrongAnimation)
 
 Repo: https://github.com/abdulkarimkhaan/SwiftUIAnimationsGuide/tree/master/SwiftUIAnimationsGuide/SomethingWentWrong%20Group
-Preview: 
-Video: https://github.com/abdulkarimkhaan/SwiftUIAnimationsGuide/assets/49764851/6d0016cb-7592-40dc-864f-4b3441bab1d7
+
+Preview: https://github.com/abdulkarimkhaan/SwiftUIAnimationsGuide/assets/49764851/6d0016cb-7592-40dc-864f-4b3441bab1d7
 
 <img width="1440" alt="Screenshot 2023-12-31 at 2 19 16 AM" src="https://github.com/abdulkarimkhaan/SwiftUIAnimationsGuide/assets/49764851/d70fc5f3-d670-4f62-bd02-6aec2e711251">
 
