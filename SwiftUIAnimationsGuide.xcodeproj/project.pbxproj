@@ -13,6 +13,9 @@
 		8446CB3D2B4B8C9800C8E3F7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446CB3A2B4B8C9800C8E3F7 /* MainView.swift */; };
 		8446CB3F2B4B8CAF00C8E3F7 /* BottomContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446CB3E2B4B8CAF00C8E3F7 /* BottomContentView.swift */; };
 		84612D4B2AA10F90001201E5 /* LoadingBarWithLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84612D4A2AA10F8F001201E5 /* LoadingBarWithLogo.swift */; };
+		846ADDC92B779D920086095E /* LoadingBarBlack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846ADDC82B779D920086095E /* LoadingBarBlack.swift */; };
+		846ADDCB2B7B03200086095E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846ADDCA2B7B03200086095E /* LoginView.swift */; };
+		849BBB552B51D2C50029775D /* Flags.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849BBB542B51D2C00029775D /* Flags.xcassets */; };
 		84B26AB92A7687F5007A6710 /* TopBannerAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B26AB82A7687F5007A6710 /* TopBannerAnimate.swift */; };
 		84B26ABB2A7738B6007A6710 /* ScalingThreeDotsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B26ABA2A7738B6007A6710 /* ScalingThreeDotsLoader.swift */; };
 		84B26ABD2A782638007A6710 /* PacmanLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B26ABC2A782638007A6710 /* PacmanLoader.swift */; };
@@ -58,6 +61,9 @@
 		8446CB3A2B4B8C9800C8E3F7 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8446CB3E2B4B8CAF00C8E3F7 /* BottomContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomContentView.swift; sourceTree = "<group>"; };
 		84612D4A2AA10F8F001201E5 /* LoadingBarWithLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingBarWithLogo.swift; sourceTree = "<group>"; };
+		846ADDC82B779D920086095E /* LoadingBarBlack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingBarBlack.swift; sourceTree = "<group>"; };
+		846ADDCA2B7B03200086095E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		849BBB542B51D2C00029775D /* Flags.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Flags.xcassets; sourceTree = "<group>"; };
 		84B26AB82A7687F5007A6710 /* TopBannerAnimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBannerAnimate.swift; sourceTree = "<group>"; };
 		84B26ABA2A7738B6007A6710 /* ScalingThreeDotsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalingThreeDotsLoader.swift; sourceTree = "<group>"; };
 		84B26ABC2A782638007A6710 /* PacmanLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacmanLoader.swift; sourceTree = "<group>"; };
@@ -118,6 +124,15 @@
 			path = "SomethingWentWrong Group";
 			sourceTree = "<group>";
 		};
+		846ADDC72B779D810086095E /* LoadingBar */ = {
+			isa = PBXGroup;
+			children = (
+				846ADDC82B779D920086095E /* LoadingBarBlack.swift */,
+				846ADDCA2B7B03200086095E /* LoginView.swift */,
+			);
+			path = LoadingBar;
+			sourceTree = "<group>";
+		};
 		84D97E712A75767E005B876C = {
 			isa = PBXGroup;
 			children = (
@@ -141,9 +156,9 @@
 		84D97E7C2A75767E005B876C /* SwiftUIAnimationsGuide */ = {
 			isa = PBXGroup;
 			children = (
-				8446CB372B4B8C4700C8E3F7 /* SomethingWentWrong Group */,
-				84B26B132A8A4FEC007A6710 /* Info.plist */,
 				84D97E7D2A75767E005B876C /* SwiftUIAnimationsGuideApp.swift */,
+				846ADDC72B779D810086095E /* LoadingBar */,
+				8446CB372B4B8C4700C8E3F7 /* SomethingWentWrong Group */,
 				84D97E7F2A75767E005B876C /* CircleLoader.swift */,
 				84D97EA72A75777D005B876C /* RippleEffect.swift */,
 				84D97EA92A758DBD005B876C /* Clocks.swift */,
@@ -160,7 +175,9 @@
 				8414BEE92AB255A0004CEA67 /* RippleAnimation.swift */,
 				84F0F02E2AB4E31000E69BF8 /* ButtonExpandAnimation.swift */,
 				8406C1D32AB667DD00EA57FF /* BarLoader.swift */,
+				849BBB542B51D2C00029775D /* Flags.xcassets */,
 				84D97E812A757682005B876C /* Assets.xcassets */,
+				84B26B132A8A4FEC007A6710 /* Info.plist */,
 				84D97E832A757682005B876C /* Preview Content */,
 			);
 			path = SwiftUIAnimationsGuide;
@@ -255,7 +272,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					84D97E792A75767E005B876C = {
 						CreatedOnToolsVersion = 14.2;
@@ -296,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84D97E852A757682005B876C /* Preview Assets.xcassets in Resources */,
+				849BBB552B51D2C50029775D /* Flags.xcassets in Resources */,
 				84D97E822A757682005B876C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,7 +346,9 @@
 				8406C1D42AB667DD00EA57FF /* BarLoader.swift in Sources */,
 				84D97E802A75767E005B876C /* CircleLoader.swift in Sources */,
 				84D97E7E2A75767E005B876C /* SwiftUIAnimationsGuideApp.swift in Sources */,
+				846ADDC92B779D920086095E /* LoadingBarBlack.swift in Sources */,
 				84612D4B2AA10F90001201E5 /* LoadingBarWithLogo.swift in Sources */,
+				846ADDCB2B7B03200086095E /* LoginView.swift in Sources */,
 				84D97EAE2A767EBC005B876C /* SandClockLoader.swift in Sources */,
 				84B9B7942AA6CD7100541398 /* DownloadButton.swift in Sources */,
 				84CCECB12AA466EA00AC4C21 /* LoadingWithOAnimation.swift in Sources */,
@@ -413,6 +433,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -427,7 +448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -473,6 +494,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -481,7 +503,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

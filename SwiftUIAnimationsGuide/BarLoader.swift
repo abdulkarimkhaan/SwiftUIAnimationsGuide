@@ -22,7 +22,6 @@ struct BarLoader: View {
             Color.black.edgesIgnoringSafeArea(.all)
             
             HStack {
-                
                 RoundedRectangle(cornerRadius: 13.0)
                     .frame(width: 26, height: height1)
                     .foregroundColor(.white)

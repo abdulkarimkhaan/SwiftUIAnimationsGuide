@@ -85,94 +85,94 @@ struct DownloadButton: View {
             Color(red: 37/255, green: 43/255, blue: 54/255).edgesIgnoringSafeArea(.all)
             
             VStack (spacing: 30) {
-                    ZStack {
-                        
-                        //Animate inner circle when download button tapped
-                        Circle()
-                            .stroke(style: StrokeStyle(lineWidth: 10))
-                            .frame(width: 150, height: 150)
-                            .foregroundColor(Color(red: 137/255, green: 185/255, blue: 63/255))
-
-                        Circle()
-                            .frame(width: circleWidth, height: circleHeight)
-                            .foregroundColor(Color(red: 137/255, green: 185/255, blue: 63/255))
-                            .animation(.easeOut.speed(1), value: circleWidth)
-                        
-                        Circle()
-                            .frame(width: circleWidth1 - 10, height: circleHeight1 - 10)
-                            .foregroundColor(Color(red: 37/255, green: 43/255, blue: 54/255))
-                            .animation(.easeOut.speed(0.5), value: circleWidth1)
-                        
-                        
-                        //progress 0.4 to 0.6
-                        WaveAnimation(progress: 0.4, waveHeight: 0.03, offset: offset, fillLevelWave: fillLevelWave)
-                            .fill(Color(red: 137/255, green: 185/255, blue: 63/255))
-                            .frame(width: 150, height: 150)
-                            .mask {
-                                Circle()
-                                    .frame(width: 150, height: 150)
-                                    .foregroundColor(Color(red: 137/255, green: 185/255, blue: 63/255))
-                            }
-                            .onAppear {
-                                withAnimation(.linear(duration: 1).repeatForever(autoreverses: true)) {
-                                    offset = 150
-                                }
-                            }
-                        
-                        //Download button
-                        
-                        Circle()
-                            .stroke(style: StrokeStyle(lineWidth: 10))
-                            .frame(width: 150, height: 150)
-                            .foregroundColor(Color(red: 137/255, green: 185/255, blue: 63/255))
-                            .overlay(
-                                    Rectangle()
-                                        .scaleEffect(CGSize(width: 150, height: fillLevel), anchor: .bottom) // Scale height from the bottom
-                                        .foregroundColor(Color(red: 137/255, green: 185/255, blue: 63/255))
-                                        .cornerRadius(75.0)
-                                        .animation(.linear.speed(0.0005), value: fillLevel)
-                            )
-                        
-                        Image(fillLevelWave > 0 ? "ic-download-black" : "ic-download-green")
-                            .resizable()
-                            .frame(width: 95, height: 95)
-                            .opacity(percentageLevel == 100 ? 0 : 1)
-                            .animation(.easeInOut(duration: 1), value: percentageLevel)
-                        
-                        TickShape()
-                            .stroke(Color(red: 37/255, green: 43/255, blue: 54/255), lineWidth: 10)
-                            .frame(width: 70, height: 70)
-                            .opacity(percentageLevel == 100 ? 1 : 0)
-                            .animation(.easeInOut(duration: 1), value: percentageLevel)
-
-                    }
-                    .onTapGesture {
-                        withAnimation {
-                            downloadProgress = .InProgress
-                            circleWidth = 150
-                            circleHeight = 150
-//                            fillLevel = 150
-                            if circleWidth == 150 {
-                                circleWidth1 = 150
-                                circleHeight1 = 150
+                ZStack {
+                    
+                    //Animate inner circle when download button tapped
+                    Circle()
+                        .stroke(style: StrokeStyle(lineWidth: 10))
+                        .frame(width: 150, height: 150)
+                        .foregroundColor(Color(red: 137/255, green: 185/255, blue: 63/255))
+                    
+                    Circle()
+                        .frame(width: circleWidth, height: circleHeight)
+                        .foregroundColor(Color(red: 137/255, green: 185/255, blue: 63/255))
+                        .animation(.easeOut.speed(1), value: circleWidth)
+                    
+                    Circle()
+                        .frame(width: circleWidth1 - 10, height: circleHeight1 - 10)
+                        .foregroundColor(Color(red: 37/255, green: 43/255, blue: 54/255))
+                        .animation(.easeOut.speed(0.5), value: circleWidth1)
+                    
+                    
+                    //progress 0.4 to 0.6
+                    WaveAnimation(progress: 0.4, waveHeight: 0.03, offset: offset, fillLevelWave: fillLevelWave)
+                        .fill(Color(red: 137/255, green: 185/255, blue: 63/255))
+                        .frame(width: 150, height: 150)
+                        .mask {
+                            Circle()
+                                .frame(width: 150, height: 150)
+                                .foregroundColor(Color(red: 137/255, green: 185/255, blue: 63/255))
+                        }
+                        .onAppear {
+                            withAnimation(.linear(duration: 1).repeatForever(autoreverses: true)) {
+                                offset = 150
                             }
                         }
-                        Timer.scheduledTimer(withTimeInterval: 0.080, repeats: true) { Timer in
-                            if percentageLevel < 100 {
-                                percentageLevel += 1
-                            }
-                            if percentageLevel == 100 {
-                                downloadProgress = .Completed
-                            }
-                        }
-
-                        Timer.scheduledTimer(withTimeInterval: 0.056, repeats: true) { Timer in
-                            if fillLevelWave < 150 {
-                                fillLevelWave += 1
-                            }
+                    
+                    //Download button
+                    
+                    Circle()
+                        .stroke(style: StrokeStyle(lineWidth: 10))
+                        .frame(width: 150, height: 150)
+                        .foregroundColor(Color(red: 137/255, green: 185/255, blue: 63/255))
+                        .overlay(
+                            Rectangle()
+                                .scaleEffect(CGSize(width: 150, height: fillLevel), anchor: .bottom) // Scale height from the bottom
+                                .foregroundColor(Color(red: 137/255, green: 185/255, blue: 63/255))
+                                .cornerRadius(75.0)
+                                .animation(.linear.speed(0.0005), value: fillLevel)
+                        )
+                    
+                    Image(fillLevelWave > 0 ? "ic-download-black" : "ic-download-green")
+                        .resizable()
+                        .frame(width: 95, height: 95)
+                        .opacity(percentageLevel == 100 ? 0 : 1)
+                        .animation(.easeInOut(duration: 1), value: percentageLevel)
+                    
+                    TickShape()
+                        .stroke(Color(red: 37/255, green: 43/255, blue: 54/255), lineWidth: 10)
+                        .frame(width: 70, height: 70)
+                        .opacity(percentageLevel == 100 ? 1 : 0)
+                        .animation(.easeInOut(duration: 1), value: percentageLevel)
+                    
+                }
+                .onTapGesture {
+                    withAnimation {
+                        downloadProgress = .InProgress
+                        circleWidth = 150
+                        circleHeight = 150
+                        //                            fillLevel = 150
+                        if circleWidth == 150 {
+                            circleWidth1 = 150
+                            circleHeight1 = 150
                         }
                     }
-                    .frame(width: 150, height: 150)
+                    Timer.scheduledTimer(withTimeInterval: 0.080, repeats: true) { Timer in
+                        if percentageLevel < 100 {
+                            percentageLevel += 1
+                        }
+                        if percentageLevel == 100 {
+                            downloadProgress = .Completed
+                        }
+                    }
+                    
+                    Timer.scheduledTimer(withTimeInterval: 0.056, repeats: true) { Timer in
+                        if fillLevelWave < 150 {
+                            fillLevelWave += 1
+                        }
+                    }
+                }
+                .frame(width: 150, height: 150)
                 
                 
                 VStack (spacing: 10) {
@@ -182,10 +182,16 @@ struct DownloadButton: View {
                         .font(.system(size: 30))
                         .animation(.easeIn(duration: 0.3), value: downloadProgress)
                     
-                    Text("\(percentageLevel, specifier: "%.0f") %")
-                        .foregroundColor(.white)
-                        .font(.system(size: 26))
-                        .opacity(downloadProgress == .InProgress ? 1 : 0)
+                    HStack {
+                        Text("\(percentageLevel, specifier: "%.0f")")
+                            .foregroundColor(.white)
+                            .font(.system(size: 26))
+                            .contentTransition(.numericText())
+                        Text("%")
+                            .foregroundColor(.white)
+                            .font(.system(size: 26))
+                    }
+                    .opacity(downloadProgress == .InProgress ? 1 : 0)
                 }
             }
             
