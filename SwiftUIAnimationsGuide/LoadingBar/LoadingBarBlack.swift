@@ -20,23 +20,14 @@ struct LoadingBarBlack: View {
     
     var body: some View {
         ZStack {
-            VStack(alignment: .leading, spacing: 5) {
+            VStack(spacing: 15) {
                 Spacer()
-                HStack {
-                    Text("LOADING...")
-                        .foregroundStyle(.white)
-                        .font(.title3)
-                        .bold()
-                        .opacity(percentage == 100 ? 100 : (showLoading ? 100 : 0))
-                        .animation(.easeInOut, value: showLoading)
-                    Spacer()
-                    Text("\(percentage) %")
-                        .foregroundStyle(.white)
-                        .font(.title3)
-                        .bold()
-                        .contentTransition(.numericText(value: Double(percentage)))
-                }
-                .padding(.horizontal, 20)
+                Text("LOADING...")
+                    .foregroundStyle(.white)
+                    .font(.title)
+                    .bold()
+                    .opacity(percentage == 100 ? 100 : (showLoading ? 100 : 0))
+                    .animation(.easeInOut, value: showLoading)
                 
                 //Loading Bar
                 HStack {
@@ -48,7 +39,7 @@ struct LoadingBarBlack: View {
                         .overlay {
                             VStack(alignment: .leading) {
                                 Capsule()
-                                    .foregroundStyle(.white)
+                                    .foregroundStyle(Color(red: 0, green: 195/255, blue: 86/255))
                                     .frame(width: loadingProgress)
                             }
                             .padding(8)
@@ -57,6 +48,12 @@ struct LoadingBarBlack: View {
                         }
                     Spacer()
                 }
+                
+                Text("\(percentage) %")
+                    .foregroundStyle(.white)
+                    .font(.title2)
+                    .bold()
+                    .contentTransition(.numericText(value: Double(percentage)))
                 
                 Spacer()
             }
